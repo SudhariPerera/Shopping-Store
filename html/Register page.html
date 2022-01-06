@@ -1,0 +1,203 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<style>  
+		body
+		{  
+			font-family: Times new romen;  
+			background-color: black;  
+			font-weight: bold;
+		} 
+	
+		.logo 
+		{  
+			width:220px;
+			height:65px;
+			margin align:left;
+			position:absolute;
+			left:4%;
+			top:2%;
+		}
+			
+		.title01
+		{
+			font-family:Century Gothic;
+			color: white;
+			font-size: 14px;
+			margin-left:0px;
+			margin-right: 195px;
+		}
+		
+		.contain
+		{  
+			padding: 55px;  
+			background-color: white;  
+		}  
+  
+		input[type=text], input[type=password], textarea 
+		{  
+			width: 100%;  
+			padding: 16px;  
+			margin: 5px 0 22px 0;  
+			display: inline-block;  
+			border: none;  
+			background: #f1f1f1;  	
+		}  
+	
+		input[type=text]:focus, input[type=password]:focus
+		{  
+			background-color: red 
+			outline: none;  
+		} 
+	
+		div 
+		{  
+      		padding: 10px 0;  
+   	    }
+	 
+		hr  
+		{  
+			border: 2px solid #f1f1f1;  
+			margin-bottom: 25px;  
+		}  
+	
+		.registerbtn 
+		{  
+			background-color: #4CAF50;  
+			color: white;  
+			padding: 16px 20px;  
+			margin: 8px 0;  
+			border: none;  
+			cursor: pointer;  
+			width: 100%;  
+			opacity: 0.9;  
+		}
+	
+		.registerbtn:hover
+		{  
+			opacity: 1;  
+		}  
+
+	</style>  
+	<script src="../JS/Register.js"></script>
+</head>  
+<body>  
+<body onload="document.registration.userid.focus();">
+	<form name="RegisterForm" action="..php/Register.php" onsubmit="return formValidation()" method="post"> 
+<div style="padding-left:6.8%;padding-top:3.6%" >
+	<div class="logo">
+ 		<img src="../Images/logo.png" alt="Z-Flider" class="logo"/>
+	</div>
+
+
+	<h4 class="title01">Smarter Shopping</h4>
+</div>
+  	<div class="contain">  
+
+  		<center>  <h1> ..Welcome to Z-Flider..  <h3> User Registration Form </h3></h1>   </center>
+ 		 <hr>  
+  		<label> First Name </label>   
+		<input type="text" name="firstname" placeholder= "First Name" size="10" required />   
+		
+		<label> Last Name: </label>     
+		<input type="text" name="lastname" placeholder="Last Name" size="10"required />  
+
+		<label> User Name: </label>     
+		<input type="text" name="Username" placeholder="Last Name" size="10"required />   		
+ 
+	<div>  
+    	<label>   
+			Gender :  
+   		</label>
+	<br>  
+		<input type="radio" value="Male" name="gender" checked > Female  <br>
+		<input type="radio" value="Female" name="gender"> Male <br>
+		<input type="radio" value="Other" name="gender"> Other  <br>
+  
+	</div>  
+
+<br>
+	<label>   
+		Phone :  
+	</label>  
+	<input type="text" name="country code" placeholder="Country Code"  value="+94" size="3"/>   
+	<input type="text" name="phone" placeholder="Phone Number" size="10"/ required>   
+
+	<label for="email">
+		Email
+	</label>  
+
+ 	<input type="text" placeholder="abc@gmail.com" name="email" required>  
+		
+	<label for="date">
+		Date of Birth
+	</label>	
+	<br>
+	<select>
+	 <option>1990</option>
+	 <option>1991</option>
+	 <option>1992</option>
+	 <option>1993</option>
+	 <option>1994</option>
+	 <option>1995</option>
+	 <option>1996</option>
+	 <option>1997</option>
+	 <option>1998</option>
+	 <option>1999</option>
+	 <option>2000</option>
+	 <option>2001</option>
+	 <option>2002</option>
+	 <option>2003</option>
+	</select>
+	<select>
+		<option>Jan</option>
+		<option>Feb</option>
+		<option>Mar</option>
+		<option>Apr</option>
+		<option>May</option>
+		<option>Jun</option>
+		<option>Jul</option>
+		<option>Aug</option>
+		<option>Sep</option>
+		<option>Oct</option>
+		<option>Nov</option>
+		<option>Dec</option>
+	</select>
+	<select>
+	 <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+	 <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+	 <option>11</option><option>12</option><option>13</option><option>14</option><option>15</option>
+	 <option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
+	 <option>21</option><option>22</option><option>23</option><option>24</option><option>25</option>
+	 <option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option>
+	</select><br></br>
+
+  
+	<label for="psw">
+		Password
+	</label>  
+    <input type="password" placeholder="Enter Password" name="psw" size="15"required>  
+  
+	<label for="psw-repeat">
+		Re-type Password
+	</label>  
+    <input type="password" placeholder="Retype Password" name="rep_psw" size="15"required>  
+	
+	<p>By creating an account you agree to our <a href="abc">Terms & Privacy</a>.</p>
+
+	<form action="/action_page.php">
+ 	<center>
+ 	 <input type="checkbox" id="capture" name="capture" value="capture" required>
+ 	 <label for="capture_me"required > I'm not a robot </label>
+ 	<br>
+ 	</center>
+  	</form>
+   	
+   	<button type="submit" class="loginbtn">Register</button>    
+  
+    <p><center>Already have an account? <a href="Login page.html">Sign in</a>.</center></p>
+
+	</form>  
+</body>  
+</html>  

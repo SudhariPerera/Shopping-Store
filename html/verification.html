@@ -1,0 +1,98 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Reset Password</title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body  
+    {  
+    margin: 0;  
+    padding: 0;  
+    background-image: url('../Images/verification.jpg');  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: Century Gothic;  
+    }  
+
+        .logo 
+        {  
+            width:220px;
+            height:65px;
+            margin align:left;
+            position:absolute;
+            left:4%;
+            top:2%;
+        }
+
+    .reset 
+    {
+        max-width: 500px;
+        margin: auto;
+        background: rgb(197, 177, 184,0.6);
+        padding: 10px;
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        border-radius: 15px ; 
+    }
+
+    label
+    {  
+    color: black;  
+    font-size: 17px;  
+    } 
+
+    #Code
+    {  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    } 
+
+    #submit
+    {  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color: blue;  
+    } 
+    </style> 
+</head>    
+<body>    
+    <div style="padding-left:6.8%;padding-top:3.6%" >
+    <div class="logo">
+        <img src="../Images/logo.png" alt="Z-Flider" class="logo"/>
+    </div>
+
+
+    <h4 class="title01">Smarter Shopping</h4>
+</div>
+   <br>
+   <br>
+    <div class="reset">    
+    <form id="login" method="get" action="Reset.php">    
+        <label>
+        <b>
+            Verification Code    
+        </b>    
+        </label>    
+       <center>
+       <input type="text" name="Code" id="Code" placeholder="Code">    
+     </center>
+        <br>
+        <br>    
+               
+        <a href="Password.html"><center><input type="button" name="Submit" id="Submit" value="Submit"></center> </a>      
+
+    </form>     
+    </div> 
+
+</body>    
+</html> 
